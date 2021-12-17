@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-  label "Docker Station"
-  }
+  agent { label 'agentnode' }
   
     stages {
     
