@@ -2,16 +2,7 @@ pipeline {
   
     stages {
     
-         stage('Get Latest'){
-            agent 
-           {
-            label 'agentnode'
-           }
-            steps {
-            sh 'git pull origin master'
-            echo "latest code updated"
-            }
-        }
+         
       
          stage('Install dependencies'){
              agent 
